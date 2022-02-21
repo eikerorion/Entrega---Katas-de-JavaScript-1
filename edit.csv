@@ -1,0 +1,79 @@
+oneThroughTwenty,,,,,
+test,let i = 1,i <= 20,i++,test.push(i),
+[],1,true,1 + 1=2,1,
+[1],2,true,2 + 1 =3,2,
+"[1,2]",3,true,3 + 1=4,3,
+"[1,2,3]",4,true,4 + 1=5,4,
+"[1,2,3,...,20]",21,false,,,
+,,,,,
+evensToTwenty,,,,,
+test,let i = 1,i <= 20,i++,if ( i%2==0),test.push(i)
+[],1,true,1 + 1= 2,false,
+[],2,true,2 + 1= 3,true,2
+[2],3,true,3 + 1= 4,false,
+[2],4,true,4 + 1= 5,true,4
+"[2,4,6,...,20]",21,false,,,
+,,,,,
+oddsToTwenty,,,,,
+test,let i = 1,i <= 20,i++,if (i%2!==0),test.push
+[],1,true,1 + 1= 2,true,1
+[1],2,true,2 + 1= 3,false,
+[1],3,true,3 + 1= 4,true,3
+"[1,3]",4,true,4 +1= 5,false,
+"[1,3,5,...,19]",20,true,20 + 1= 21,false,
+,,,,,
+multiplesOfFive,,,,,
+test,let i = 5,i <= 100,i++,if (i % 5==0),test.push(i)
+[],5,true,5 + 1= 6,true,5
+[5],6,true,6 + 1= 7,false,
+[5],7,true,7 + 1= 8,false,
+[5],8,true,8 + 1= 9,false,
+"[5,10,15,...,100]",101,false,,,
+,,,,,
+squareNumbers,,,,,
+test,let i = 1,i <= 10,i++,test.push(i*i),
+[],1,true,1 + 1 = 2,1,
+[1],2,true,2 + 1= 3,4,
+"[1,4]",3,true,3 + 1= 4,9,
+"[1,4,9]",4,true,4 + 1= 5,16,
+"[1,4,9,...,100]",11,false,,,
+,,,,,
+countingBackwards,,,,,
+test,let i = 20,i >= 1,i--,test.push(i),
+[],20,true,20 - 1=19,20,
+[20],19,true,19 - 1=18,19,
+"[20,19]",18,true,18 - 1= 17,18,
+"[20,19,18]",17,true,17 - 1=16,17,
+"[20,19,18...,1]",0,false,,,
+,,,,,
+evenNumbersBackwards,,,,,
+test,let i = 20,i >= 1,i--,if (i % 2==0),test.push(i)
+[],20,true,20 - 1=19,true,20
+[20],19,true,19 - 1=18,false,
+[20],18,true,18 - 1= 17,true,18
+"[20,18]",17,true,17 - 1=16,false,
+"[20,18,16,...,2]",1,true,1 - 1=0,false,
+,,,,,
+oddNumbersBackwards,,,,,
+test,let i = 20,i >= 1,i--,if (i % 2!==0),test.push(i)
+[],20,true,20 - 1= 19,false,
+[],19,true,19 - 1=18,true,19
+[19],18,true,18 - 1= 17,false,
+[19],17,true,17 - 1=16,true,17
+"[19,17,15,...,1]",0,false,,,
+,,,,,
+multiplesOfFiveBackwards,,,,,
+test,let i = 100,i >=5,i--,if (i % 5==0),test.push(i)
+[],100,true,100 - 1= 99,true,100
+[100],99,true,99 - 1= 98,false,
+[100],98,true,98 - 1= 97,false,
+[100],97,true,97 - 1= 96,false,
+"[100,95,90,...,5]",4,false,,,
+,,,,,
+squareNumbersBackwards,,,,,
+test,let i = 10,i >= 1,i--,test.push(i*i),
+[],10,true,10 - 1= 9,100,
+[100],9,true,9 - 1= 8,81,
+"[100,81]",8,true,8 - 1= 7,64,
+"[100,81,64]",7,true,7 - 1= 6,49,
+"[100,81,64,...,1]",0,,,,
